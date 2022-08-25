@@ -2,7 +2,6 @@ import time
 import os
 
 relationshipPoint = 0
-heroine = ["권상병", "김병장", "이병장"]
 character1 = "권상병"
 character2 = "김병장"
 character3 = "이병장"
