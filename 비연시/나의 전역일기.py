@@ -9,7 +9,7 @@ character3 = "이병장"
 while True:
     print("-"*40)
     print()
-    print("\t나의 전역일기")
+    print("\t     나의 전역일기")
     print()
     print("-"*40)
     print("1. 게임시작")
@@ -549,8 +549,71 @@ while True:
                 relationshipPoint = 0
 
         elif characterSelect == 2:
-            print("아직 구현되지 않은 기능입니다.")
-            break
+            print("{}: 그래 오늘은 {}이나 만나러 가자.".format(playerName, character2))
+            print()
+            pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
+            time.sleep(1)
+            os.system("cls")
+
+            print("{}: 얘도 오늘 비번이라고 했으니 생활관에 가면 있겠지.".format(playerName, character2))
+            print()
+            pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
+            time.sleep(1)
+            os.system("cls")
+
+            print("예상했던대로 {}은 생활관에 누워 셋플릭스를 시청하고 있었습니다.\n커튼이 쳐져있고 불이 꺼져있어 생활관이 어둡습니다.".format(character2))
+            print()
+            pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
+            time.sleep(1)
+            os.system("cls")
+
+            print("무슨 말을 하시겠습니까?")
+            print()
+            print("1. 뭐 보고있어?")
+            print("2. (불을 켜며) 빛이 당신을 태울 것입니다!")
+            print("3. 어둠의 자식이냐? 왜 이렇게 어둡게 하고있어")
+            conversationSelect = int(input("입력: "))
+            time.sleep(1)
+            os.system("cls")
+
+            if conversationSelect == 1:
+                print("호감도가 10 상승했습니다.")
+                relationshipPoint += 10
+                print("현재 호감도: {}".format(relationshipPoint))
+                print()
+                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
+                time.sleep(1)
+                os.system("cls")
+
+                print("{}: 셋플릭스 문어 게임 보고있어 같이 볼래?".format(character2))
+                print()
+                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
+                time.sleep(1)
+                os.system("cls")
+
+            elif conversationSelect == 2:
+                print("호감도가 10 하락했습니다.")
+                relationshipPoint -= 10
+                print("현재 호감도: {}".format(relationshipPoint))
+                print()
+                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
+                time.sleep(1)
+                os.system("cls")
+
+                print("{}: 키에에에에에엑!!!!".format(character2))
+                print()
+                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
+                time.sleep(1)
+                os.system("cls")
+
+            elif conversationSelect == 3:
+                print("{}: 아 신경 끄셔 ㅡㅡ 별걸로 참견이야".format(character2))
+                print()
+                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
+                time.sleep(1)
+                os.system("cls")
+
+
         elif characterSelect == 3:
             print("아직 구현되지 않은 기능입니다.")
             break
