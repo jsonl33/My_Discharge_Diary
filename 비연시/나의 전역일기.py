@@ -555,7 +555,7 @@ while True:
             time.sleep(1)
             os.system("cls")
 
-            print("{}: 오늘 오전 근무라고 했으니 생활관에 가면 있겠지.".format(playerName, character2))
+            print("{}: 오늘은 오전 근무라고 했으니 생활관에 가면 있겠지.".format(playerName, character2))
             print()
             pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
             time.sleep(1)
@@ -577,7 +577,7 @@ while True:
             os.system("cls")
 
             if conversationSelect == 1:
-                print("{}: 드라마 보고있어".format(character2))
+                print("{}: 드라마 보고있어.".format(character2))
                 print()
                 pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
                 time.sleep(1)
@@ -628,7 +628,7 @@ while True:
                 time.sleep(1)
                 os.system("cls")
 
-                print("{}: 지랄하고 자빠졌네".format(character2))
+                print("{}: 지랄하고 자빠졌네.".format(character2))
                 print()
                 pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
                 time.sleep(1)
@@ -697,7 +697,7 @@ while True:
             time.sleep(1)
             os.system("cls")
 
-            
+
 
 
         elif characterSelect == 3:
