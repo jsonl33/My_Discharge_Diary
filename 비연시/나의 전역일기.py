@@ -255,8 +255,7 @@ while True:
                 pressEnterToContinue()
 
                 print("저벅저벅")
-                pressEnterToContinue()
-        
+                pressEnterToContinue()      
 
                 print("와락")
                 pressEnterToContinue()
@@ -265,10 +264,7 @@ while True:
                 pressEnterToContinue()
 
                 print("{}: 아 새끼 안울려고 했는데 눈물나게..".format(playerName))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}이 미련 가득한 눈빛으로 당신을 바라봅니다.".format(heroine[0]))
                 pressEnterToContinue()
@@ -340,22 +336,14 @@ while True:
 
         elif characterSelect == 2:
             print("{}: 그래 오늘은 {}이나 만나러 가자.".format(playerName, heroine[1]))
-            print()
             pressEnterToContinue()
-            clearWithTime()
-    
 
             print("{}: 오늘은 오전 근무라고 했으니 생활관에 가면 있겠지.".format(playerName, heroine[1]))
             print()
             pressEnterToContinue()
-            clearWithTime()
-    
 
             print("예상했던대로 {}은 생활관에 누워 넷플릭스를 시청하고 있었습니다.\n커튼이 쳐져있고 불이 꺼져있어 생활관이 어둡습니다.".format(heroine[1]))
-            print()
             pressEnterToContinue()
-            clearWithTime()
-    
 
             print("무슨 말을 하시겠습니까?")
             print()
@@ -364,131 +352,64 @@ while True:
             print("3. 어둠의 자식이냐? 왜 이렇게 어둡게 하고있어")
             conversationSelect = int(input("입력: "))
             clearWithTime()
-    
 
             if conversationSelect == 1:
                 print("{}: 드라마 보고있어.".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 무슨 드라마 보는데?".format(playerName))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 나의 해방일지라고 이번에 나온건데 재밌더라".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
             elif conversationSelect == 2:
-                print("호감도가 10 하락했습니다.")
-                relationshipPoint -= 10
-                print("현재 호감도: {}".format(relationshipPoint))
-                print()
-                pressEnterToContinue()
-                clearWithTime()
-        
+                change_relationship_point("-")
 
                 print("{}: 키에에에에에엑!!!!".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 이 집 리액션 맛있네".format(playerName))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 아 눈뽕 뭔데 ㅡㅡ".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 군인이라면 섬광탄에 대한 면역을 기르기 위해 이런 훈련이 필요하다고 생각해.".format(playerName))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 지랄하고 자빠졌네.".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
             elif conversationSelect == 3:
-                print("호감도가 10 상승했습니다.")
-                relationshipPoint += 10
-                print("현재 호감도: {}".format(relationshipPoint))
-                print()
-                pressEnterToContinue()
-                clearWithTime()
-        
+                change_relationship_point("+")
 
                 print("{}: 아 신경 끄셔 ㅡㅡ 별걸로 참견이야".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 사람이 좀 밝은곳에서 생활하고 그래야지".format(playerName))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: ?? 너도 맨날 불꺼놓고 어둡게 해놓잖아".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 나는 나고 너는 너지 어떻게 같겠니?".format(playerName))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 내로남불 지리네 가끔 보면 넌 진짜 미친놈인 것 같아.".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 그게 내 매력이 아닐까-☆".format(playerName))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 에휴 말을 말아야지".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
             print("{}: 근데 평소에 근무 없으면 게임방에 박혀 살더니 어쩐 일로 말을 걸었대?".format(heroine[1]))
-            print()
             pressEnterToContinue()
-            clearWithTime()
-    
 
             print("{}: 그냥~ 이제 게임방도 질려서 사람들이랑 얘기 나누는 낙에 사는거지 뭐..".format(playerName))
-            print()
             pressEnterToContinue()
-            clearWithTime()
-    
-
-
-
 
         elif characterSelect == 3:
             print("아직 구현되지 않은 기능입니다.")
