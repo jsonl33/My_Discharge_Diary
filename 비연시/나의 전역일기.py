@@ -4,19 +4,6 @@ import os
 def clearWithTime():
     time.sleep(1)
     os.system("cls")
-    
-def playerName():
-    playerName = input("주인공의 이름을 입력해주십쇼: ")
-    time.sleep(1)
-    os.system("cls")
-    return playerName
-    
-def userSelection():
-    print()
-    userSelection = int(input("선택: "))
-    time.sleep(1)
-    os.system("cls")
-    return userSelection
 
 def pressEnterToContinue():
     print()
@@ -80,8 +67,6 @@ while True:
         print()
         characterSelect = int(input("입력: "))
         clearWithTime()
-
-
         
         if characterSelect == 1:
             print("{}: 그래 오늘은 {}이나 만나러 가자.".format(playerName, heroine[0]))
