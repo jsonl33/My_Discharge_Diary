@@ -19,11 +19,11 @@ while True:
         global relationshipPoint
 
         if plus_or_minus == "+":
-            relationshipPoint = relationshipPoint + 10
+            relationshipPoint += 10
             print("호감도가 10 상승했습니다.")
             print("현재 호감도: {}".format(relationshipPoint)) 
         elif plus_or_minus == "-":
-            relationshipPoint = relationshipPoint - 10
+            relationshipPoint -= 10
             print("호감도가 10 하락했습니다.")
             print("현재 호감도: {}".format(relationshipPoint))
         pressEnterToContinue()
