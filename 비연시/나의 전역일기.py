@@ -72,7 +72,7 @@ while True:
         print("{}: 복지시설 이용도 질리고 휴대폰으로 볼만한 것도 없으니 애들이랑 얘기나 하러 가볼까.".format(playerName))
         pressEnterToContinue()
 
-        print("누구를 만나러 가시겠습니까? ※현재 기술적인 이유로 {} 외에 선택 불가능합니다※".format(heroine[0]))
+        print("누구를 만나러 가시겠습니까? *** 현재 기술적인 이유로 {} 외에 선택 불가능합니다 ***".format(heroine[0]))
         print()
         print("1. {}".format(heroine[0]))
         print("2. {}".format(heroine[1]))
