@@ -27,17 +27,7 @@ while True:
             print("호감도가 10 하락했습니다.")
             print("현재 호감도: {}".format(relationshipPoint))
         pressEnterToContinue()
-
-    def gameStartDialog():
-        print("{}: 후임들과 간부들에게 시달리고 근무로 찌들었던 날들...".format(player))
-        pressEnterToContinue()
-
-        print("{}: 내 전역은 이제 얼마 남지 않았고 오늘은 비번이다.".format(player))
-        pressEnterToContinue()
-
-        print("{}: 복지시설 이용도 질리고 휴대폰으로 볼만한 것도 없으니 애들이랑 얘기나 하러 가볼까.".format(player))
-        pressEnterToContinue()
-
+    
     def story_1():
         print("{}: 그래 오늘은 {}이나 만나러 가자.".format(player,heroine[0]))
         pressEnterToContinue()
@@ -397,7 +387,14 @@ while True:
         player = input("주인공의 이름을 입력해주십쇼: ")
         clearWithTime()
         
-        gameStartDialog()
+        print("{}: 후임들과 간부들에게 시달리고 근무로 찌들었던 날들...".format(player))
+        pressEnterToContinue()
+
+        print("{}: 내 전역은 이제 얼마 남지 않았고 오늘은 비번이다.".format(player))
+        pressEnterToContinue()
+
+        print("{}: 복지시설 이용도 질리고 휴대폰으로 볼만한 것도 없으니 애들이랑 얘기나 하러 가볼까.".format(player))
+        pressEnterToContinue()
 
         print("누구를 만나러 가시겠습니까? *** 현재 기술적인 이유로 {} 외에 선택 불가능합니다 ***".format(heroine[0]))
         print()
