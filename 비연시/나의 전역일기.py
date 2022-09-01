@@ -4,6 +4,19 @@ import os
 def clearWithTime():
     time.sleep(1)
     os.system("cls")
+    
+def playerName():
+    playerName = input("주인공의 이름을 입력해주십쇼: ")
+    time.sleep(1)
+    os.system("cls")
+    return playerName
+    
+def userSelection():
+    print()
+    userSelection = int(input("선택: "))
+    time.sleep(1)
+    os.system("cls")
+    return userSelection
 
 def pressEnterToContinue():
     print()
@@ -47,7 +60,8 @@ while True:
         pressEnterToContinue()
 
         playerName = input("주인공의 이름을 입력해주십쇼: ")
-        clearWithTime()
+        time.sleep(1)
+        os.system("cls")
 
         print("{}: 후임들과 간부들에게 시달리고 근무로 찌들었던 날들...".format(playerName))
         pressEnterToContinue()
@@ -255,10 +269,7 @@ while True:
                 pressEnterToContinue()
 
                 print("저벅저벅")
-                print()
-                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-                time.sleep(1)
-                os.system("cls")
+                pressEnterToContinue()
 
                 print("와락")
                 pressEnterToContinue()
@@ -307,12 +318,7 @@ while True:
                 print("\t\t배드 엔딩")
                 print()
                 print("-"*40)
-                print()
-                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-                time.sleep(1)
-                os.system("cls")
-
-                relationshipPoint = 0
+                pressEnterToContinue()
 
             elif  relationshipPoint <= -30:
                 print("집으로 가려던 중 {}을 마주쳤다. 나를 기다린 듯하다.".format(heroine[0]))
@@ -327,7 +333,7 @@ while True:
                 print("{}: \"쿠어엉\"".format(heroine[0]))
                 pressEnterToContinue()
 
-                print("{}의 몸에서 하얀 털이 돋아나고 키가 3m까지 커지며 이빨과 발톱이 자라납니다.".format(character1))
+                print("{}의 몸에서 하얀 털이 돋아나고 키가 3m까지 커지며 이빨과 발톱이 자라납니다.".format(heroine[0]))
                 print("아무래도 북극곰이라는 별명은 별명이 아닌 진짜였나 봅니다.")
                 pressEnterToContinue()
 
@@ -339,59 +345,36 @@ while True:
                 print("\t\tYou Died")
                 print()
                 print("-"*40)
-                print()
-                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-                time.sleep(1)
-                os.system("cls")
-
-                relationshipPoint = 0
+                pressEnterToContinue()
 
         elif characterSelect == 2:
-            print("{}: 그래 오늘은 {}이나 만나러 가자.".format(playerName, character2))
-            print()
-            pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-            time.sleep(1)
-            os.system("cls")
+            print("{}: 그래 오늘은 {}이나 만나러 가자.".format(playerName, heroine[1]))
+            pressEnterToContinue()
 
             print("예상했던대로 {}은 생활관에 누워 넷플릭스를 시청하고 있었습니다.\n커튼이 쳐져있고 불이 꺼져있어 생활관이 어둡습니다.".format(heroine[1]))
-            print()
-            pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-            time.sleep(1)
-            os.system("cls")
+            pressEnterToContinue()
 
-            print("예상했던대로 {}은 생활관에 누워 넷플릭스를 시청하고 있었습니다.\n커튼이 쳐져있고 불이 꺼져있어 생활관이 어둡습니다.".format(character2))
-            print()
-            pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-            time.sleep(1)
-            os.system("cls")
+            print("예상했던대로 {}은 생활관에 누워 넷플릭스를 시청하고 있었습니다.\n커튼이 쳐져있고 불이 꺼져있어 생활관이 어둡습니다.".format(heroine[1]))
+            pressEnterToContinue()
 
             print("무슨 말을 하시겠습니까?")
             print()
             print("1. 뭐 보고있어?")
             print("2. (불을 켜며) 빛이 당신을 태울 것입니다!")
             print("3. 어둠의 자식이냐? 왜 이렇게 어둡게 하고있어")
+            print()
             conversationSelect = int(input("입력: "))
-            time.sleep(1)
-            os.system("cls")
+            clearWithTime()
 
             if conversationSelect == 1:
                 print("{}: 드라마 보고있어.".format(heroine[1]))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
                 print("{}: 무슨 드라마 보는데?".format(playerName))
-                print()
                 pressEnterToContinue()
-                clearWithTime()
-        
 
-                print("{}: 나의 해방일지라고 이번에 나온건데 재밌더라".format(character2))
-                print()
-                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-                time.sleep(1)
-                os.system("cls")
+                print("{}: 나의 해방일지라고 이번에 나온건데 재밌더라".format(heroine[1]))
+                pressEnterToContinue()
 
             elif conversationSelect == 2:
                 change_relationship_point("-")
@@ -400,31 +383,19 @@ while True:
                 pressEnterToContinue()
 
                 print("{}: ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 이 집 리액션 맛있네".format(playerName))
-                print()
-                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-                time.sleep(1)
-                os.system("cls")
+                pressEnterToContinue()
 
                 print("{}: 아 눈뽕 뭔데 ㅡㅡ".format(heroine[1]))
                 pressEnterToContinue()
 
                 print("{}: 군인이라면 섬광탄에 대한 면역을 기르기 위해 이런 훈련이 필요하다고 생각해.".format(playerName))
-                print()
-                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-                time.sleep(1)
-                os.system("cls")
+                pressEnterToContinue()
 
                 print("{}: 지랄하고 자빠졌네.".format(heroine[1]))
                 pressEnterToContinue()
 
             elif conversationSelect == 3:
-                print("호감도가 10 상승했습니다.")
-                relationshipPoint += 10
-                print("현재 호감도: {}".format(relationshipPoint))
-                print()
-                pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-                time.sleep(1)
-                os.system("cls")
+                change_relationship_point("+")
 
                 print("{}: 아 신경 끄셔 ㅡㅡ 별걸로 참견이야".format(heroine[1]))
                 pressEnterToContinue()
@@ -447,11 +418,8 @@ while True:
                 print("{}: 에휴 말을 말아야지".format(heroine[1]))
                 pressEnterToContinue()
 
-            print("{}: 근데 평소에 근무 없으면 게임방에 박혀 살더니 어쩐 일로 말을 걸었대?".format(character2))
-            print()
-            pressEnter = input("계속하려면 아무거나 입력하시지 말입니다.")
-            time.sleep(1)
-            os.system("cls")
+            print("{}: 근데 평소에 근무 없으면 게임방에 박혀 살더니 어쩐 일로 말을 걸었대?".format(heroine[1]))
+            pressEnterToContinue()
 
             print("{}: 그냥~ 이제 게임방도 질려서 사람들이랑 얘기 나누는 낙에 사는거지 뭐..".format(playerName))
             pressEnterToContinue()
