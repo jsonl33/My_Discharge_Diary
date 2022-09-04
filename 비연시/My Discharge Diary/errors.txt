@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-The label start is defined twice, at File "game/intro.rpyc", line 4:
-
-and File "game/script.rpy", line 4:
-label start:
-
-
-The label kwon_route is defined twice, at File "game/intro.rpyc", line 20:
-
-and File "game/script.rpy", line 20:
-label kwon_route:
-
+File "game/script.rpy", line 50: expected ':' not found.
+    label after_choice1
+                       ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Sun Sep  4 21:41:18 2022
+Sun Sep  4 21:52:50 2022

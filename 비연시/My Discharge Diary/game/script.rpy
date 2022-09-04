@@ -1,6 +1,9 @@
 ﻿define player = Character("[playerName]")
 define kwon = Character("권상병")
 
+image kwon_happy = "kwon_happy.png"
+image bg_office = "bg_office.png"
+
 label start:
     scene black
 
@@ -22,12 +25,31 @@ label kwon_route:
     player "늘 그렇듯 행보관의 짬처리를 하고있을테니 행정반에 있겠지."
     "(당신은 행정반으로 향합니다.)"
 
-    "저벅저벅"
+    show bg_office with dissolve
 
+    show kwon_happy
     "예상했던대로 불쌍한 북극곰은 행정반에서 악랄한 인간들에게 노동착취를 당하고 있었습니다."
     "무슨 말을 하시겠습니까?"
 
-    
-                
+    menu:
+        "헤이 작은 아기고양이 여기서 뭐해?":
+            jump choice1_a
+        "많이 힘들지..?":
+            jump choice1_b
+        "주말에 일하는 흑우가 있다?!?! 엌ㅋㅋㅋㅋㅋㅋ":
+            jump choice1_c
+
+label choice1_a:
+    kwon "?? (눈빛에 경멸이 느껴집니다.)"
+    jump after_choice1
+label choice1_b:
+    kwon "그래도 아직까진 견딜만 한 것 같아.."
+    jump after_choice1
+label choice1_c:
+    kwon "하.하.하..."
+    jump after_choice1
+
+label after_choice1:
+    "권상병은 넋나간 표정으로 다시 컴퓨터로 뭔가를 하기 시작합니다."
 
 return
