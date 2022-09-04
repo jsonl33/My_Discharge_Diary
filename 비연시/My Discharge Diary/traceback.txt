@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While parsing C:\Users\cata7\Desktop\Local Projects\My_Discharge_Diary\비연시\My Discharge Diary\game/intro.rpy.
+Exception: Line with id start_48507a87 appeared twice, at game/intro.rpy:7 and game/script.rpy:7.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\main.py", line 490, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\script.py", line 297, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\script.py", line 809, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn) # type: ignore
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\script.py", line 427, in finish_load
+    self.translator.take_translates(all_stmts)
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\translation\__init__.py", line 166, in take_translates
+    raise Exception("Line with id %s appeared twice, at %s:%d and %s:%d." %
+Exception: Line with id start_48507a87 appeared twice, at game/intro.rpy:7 and game/script.rpy:7.
+
+Windows-10-10.0.22000 AMD64
+Ren'Py 8.0.2.22081402
+My Discharge Diary 1.0
+Sun Sep  4 21:40:09 2022
