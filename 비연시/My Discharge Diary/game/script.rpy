@@ -27,7 +27,7 @@ label kwon_route:
 
     show bg_office with dissolve
 
-    show kwon_happy
+    show kwon_happy at left with dissolve
     "예상했던대로 불쌍한 북극곰은 행정반에서 악랄한 인간들에게 노동착취를 당하고 있었습니다."
     "무슨 말을 하시겠습니까?"
 
@@ -41,6 +41,7 @@ label kwon_route:
 
 label choice1_a:
     kwon "?? (눈빛에 경멸이 느껴집니다.)"
+    kwon "난 곰이라곰."
     jump after_choice1
 label choice1_b:
     kwon "그래도 아직까진 견딜만 한 것 같아.."
