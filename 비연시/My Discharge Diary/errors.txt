@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 148: expected ':' not found.
-    label after_choice3
-                       ^
+File "game/options.rpy", line 25: Line is indented, but the preceding define statement statement does not expect a block. Please check this line's indentation.
+    define config.version = "1.0"
+    ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Mon Sep  5 22:03:21 2022
+Mon Sep  5 22:56:06 2022

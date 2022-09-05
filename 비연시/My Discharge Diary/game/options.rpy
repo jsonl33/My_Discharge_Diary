@@ -11,7 +11,7 @@
 ##
 ## 문자열을 _()로 둘러 쌓으면 씌우면 번역의 대상으로 표시됩니다.
 
-define config.name = _("My Discharge Diary")
+define config.name = _("나의 전역일기")
 
 
 ## 위에 주어진 제목이 주 메뉴 화면에 표시되는지 결정합니다. 제목을 숨기려면 이것
@@ -22,7 +22,7 @@ define gui.show_name = True
 
 ## 게임의 버전입니다.
 
-define config.version = "1.0"
+define config.version = "Alpha 1.0"
 
 
 ## 게임의 about 스크린에 배치되는 텍스트입니다. 텍스트를 삼중 따옴표 사이에 배치
@@ -60,7 +60,7 @@ define config.has_voice = True
 ## 처리를 제거하십시오. 이 파일은 중지되거나 다른 파일이 재생 될 때까지 계속 재
 ## 생합니다.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/전우.mp3" 
 
 
 ## 번역 ##########################################################################

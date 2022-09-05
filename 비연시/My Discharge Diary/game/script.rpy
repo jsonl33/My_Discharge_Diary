@@ -203,6 +203,9 @@ label kwon_ending:
         "권상병의 몸에서 하얀 털이 돋아나고 키가 3m까지 커지며 이빨과 발톱이 자라납니다."
         "아무래도 북극곰이라는 별명은 별명이 아니라 진짜였나 봅니다."
         "하하 X발"
+        # play audio "sfx/youdied.mp3" noloop
         scene youdied with Dissolve(3.0)
+        pause(2.0)
+        scene black with Dissolve(3.0)
 
 return
