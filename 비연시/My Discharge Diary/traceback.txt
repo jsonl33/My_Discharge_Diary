@@ -1,26 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 46, in script
-    $ print("호감도가 10 하락했습니다.\n현재 호감도{}".foramt(kwon_affection))
-  File "game/script.rpy", line 46, in <module>
-    $ print("호감도가 10 하락했습니다.\n현재 호감도{}".foramt(kwon_affection))
-AttributeError: 'str' object has no attribute 'foramt'
+  File "game/script.rpy", line 206, in script
+    scene youdied with dissolve(3.0)
+TypeError: 'Dissolve' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 46, in script
-    $ print("호감도가 10 하락했습니다.\n현재 호감도{}".foramt(kwon_affection))
-  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\python.py", line 1052, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 46, in <module>
-    $ print("호감도가 10 하락했습니다.\n현재 호감도{}".foramt(kwon_affection))
-AttributeError: 'str' object has no attribute 'foramt'
+  File "game/script.rpy", line 206, in script
+    scene youdied with dissolve(3.0)
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\ast.py", line 1658, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\exports.py", line 1653, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\display\core.py", line 2798, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
+  File "C:\Users\cata7\Desktop\Local Projects\renpy-8.0.2-sdk\renpy\display\core.py", line 3746, in interact_core
+    trans = self.ongoing_transition[None](
+TypeError: 'Dissolve' object is not callable
 
 Windows-10-10.0.22000 AMD64
 Ren'Py 8.0.2.22081402
 My Discharge Diary 1.0
-Sun Sep  4 23:16:16 2022
+Mon Sep  5 22:36:06 2022
