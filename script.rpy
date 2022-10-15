@@ -46,7 +46,7 @@ label kwon_route:
 
     scene bg_office with dissolve
 
-    show kwon at left with dissolve
+    show kwon at truecenter with dissolve
     "예상했던대로 불쌍한 북극곰은 행정반에서 악랄한 인간들에게 노동착취를 당하고 있었습니다."
     "무슨 말을 하시겠습니까?"
 
@@ -59,33 +59,23 @@ label kwon_route:
             jump choice1_c
 
 label choice1_a:
-    hide kwon_happy
-    show kwon_vangry 
+
     $ kwon_affection -= 10
     kwon "?? (눈빛에 경멸이 느껴집니다.)"
     kwon "난 곰이라곰."
-    hide kwon_vangry with dissolve
     jump after_choice1
 label choice1_b:
-    hide kwon_happy
-    show kwon_vhappy 
     $ kwon_affection += 10
     kwon "그래도 아직까진 견딜만 한 것 같아.."
     hide kwon_vhappy with dissolve
     jump after_choice1
 label choice1_c:
-    hide kwon_happy
-    show kwon_angry 
     kwon "하..하..하..."
-    hide kwon_angry with dissolve
     jump after_choice1
 
 label after_choice1:
-    show kwon_blankmind with dissolve
     "권상병은 넋나간 표정으로 다시 컴퓨터로 뭔가를 하기 시작합니다."
     player "이게 뭐하는거야?"
-    hide kwon_blankmind
-    show kwon_happy
     kwon "이건 0창에서 받아야 하는것들 품목이랑 수량 정리하는거고 이건 간부들 분기별 중식 예산이야."
     player "이야 보급관한테 제대로 짬처리 당했구나.. 힘들겠다"
     kwon "항상 그렇지 뭐.. [playerName] 너는 무슨 일로 왔어?"
@@ -99,28 +89,18 @@ label after_choice1:
             jump choice2_c
 
 label choice2_a:
-    hide kwon_happy
-    show kwon_vhappy 
     $ kwon_affection += 10
     kwon "그래? 감동이네"
-    hide kwon_vhappy
     jump after_choice2
 label choice2_b:
-    hide kwon_happy
-    show kwon_vangry
     $ kwon_affection -= 10
     kwon "?? 그렇긴 하지.."
-    hide kwon_vangry
     jump after_choice2
 label choice2_c:
-    hide kwon_happy
-    show kwon_angry 
     kwon "허허.."
-    hide kwon_angry
     jump after_choice2
 
 label after_choice2:
-    show kwon_happy
     kwon "그러고보니까 [playerName] 너 전역이 얼마 안남았구나.."
     player "그러게 벌써 시간이 이렇게 됐네"
     kwon "너한테 이래저래 도움도 많이 받고 많이 배웠는데 조금 아쉽긴 하다"
@@ -136,20 +116,16 @@ label after_choice2:
 label choice3_a:
     $ kwon_affection -= 10
     kwon "어후 그건 좀..."
-    hide kwon_happy
+    hide kwon
     jump after_choice3
 label choice3_b:
-    hide kwon_happy
-    show kwon_vhappy  
     kwon "그게 맞지 ㅋㅋ"
-    hide kwon_vhappy
+    hide kwon
     jump after_choice3
 label choice3_c:
-    hide kwon_happy
-    show kwon_vhappy 
     $ kwon_affection += 10
     kwon "그 동안 잘 해줘서 고마웠어."
-    hide kwon_vhappy
+    hide kwon
     jump after_choice3
 
 label after_choice3:
