@@ -8,6 +8,11 @@ image kwon_vangry = "kwon_veryangry.png"
 image kwon_vhappy = "kwon_veryhappy.png"
 image kwon_blankmind = "kwon_blankmind.png"
 
+image kwon = "kwon.png"
+image lee = "lee.png"
+image lim = "lim.png"
+image kim = "kim.png"
+
 image office = "bg_office.png"
 image barrack = "bg_barrack.png"
 image entrance = "bg_entrance.png"
@@ -41,7 +46,7 @@ label kwon_route:
 
     scene bg_office with dissolve
 
-    show kwon_happy with dissolve
+    show kwon at left with dissolve
     "예상했던대로 불쌍한 북극곰은 행정반에서 악랄한 인간들에게 노동착취를 당하고 있었습니다."
     "무슨 말을 하시겠습니까?"
 
